@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
  }
+/*  */
+#grid_canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 
 /*  */
 @keyframes fadeUp {
@@ -241,7 +250,7 @@
 
  .Projects_box {
   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+  grid-template-columns: repeat(3, 1fr);
   background-color: #c9a84c;
   gap: 0;
   border: 1px solid #c9a84c
@@ -286,6 +295,7 @@
  }
 
  .Projects_code_button {
+  margin-top: 1rem;
   font-size : 0.6rem;
   color: #c9a84c;
   letter-spacing: 2px;
@@ -301,6 +311,7 @@
  .Projects_code_button:hover {
   background-color: #c9a84c;
   color: #080810;
+  
  }
 /*  */
  .Skills {
@@ -309,8 +320,8 @@
  }
 
  .skills_boxes {
+  grid-template-columns: repeat(5, 1fr);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   gap: 1px;
   background-color: #1a1a2e;
   border: 1px solid #1a1a2e;
@@ -332,6 +343,112 @@
   background-color: #0d0d1a;
   color: #c9a84c;
  }
+/*  */
+.Certificates {
+  padding: 2.5rem 2rem;
+  animation: fadeUp 1.5s ease forwards;
+}
+
+.certs_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #c9a84c;
+  gap: 1px;
+  border: 1px solid #c9a84c;
+}
+
+.cert_entry {
+  background-color: #080810;
+  padding: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.cert_entry:hover {
+  background-color: #0d0d1a;
+}
+
+.cert_issuer {
+  color: #c9a84c;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.cert_name {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.cert_date {
+  color: #555;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.cert_detail {
+  color: #888;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*  */
+.Experience {
+  padding: 2.5rem 2rem;
+  animation: fadeUp 1.5s ease forwards;
+}
+
+.exp_entry {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #1a1a2e;
+}
+
+.exp_entry:last-child {
+  border-bottom: none;
+}
+
+.exp_company {
+  color: #c9a84c;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.exp_role {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+}
+
+.exp_date {
+  color: #555;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.exp_description {
+  color: #888;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 640px;
+}
 /*  */
  .Contact {
   padding: 2.5rem 2rem;

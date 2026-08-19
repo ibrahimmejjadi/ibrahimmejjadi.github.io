@@ -19,23 +19,27 @@
 
   <body>
 
+    <canvas id="grid_canvas"></canvas>
+
     <nav class="nav_class">
       <div class="nav_logo">
-        <diV class="nav_logo_2ndname">M</diV>
-        <diV class="nav_logo_1stname">.Ibrahim</diV>
+        <div class="nav_logo_2ndname">M</div>
+        <div class="nav_logo_1stname">.Ibrahim</div>
       </div>
       <div class="nav_links">
-        <a class="nav_link" href="#">HOME</a>
-        <a class="nav_link" href="#">PROJECTS</a>
-        <a class="nav_link" href="#">SKILLS</a>
-        <a class="nav_link" href="#">CONTACT</a>
+        <a class="nav_link" href="#home">HOME</a>
+        <a class="nav_link" href="#projects">PROJECTS</a>
+        <a class="nav_link" href="#skills">SKILLS</a>
+        <a class="nav_link" href="#certificates">CERTIFICATES</a>
+        <a class="nav_link" href="#contact">CONTACT</a>
+        
       </div>
     </nav>
 
-    <div class="Hero">
+    <div class="Hero" id="home">
       <p class="Hero_tag_line">// DIGITAL INFRASTRUCTURE STUDENT</p>
       <h1 class="Hero_title">IBRAHIM <br><span class="Hero_title_gold">MEJJADI</span><span class="cursor_bar"></span></h1>
-      <p class="Hero_main_speacialities">Python Developer · Pygame · Network Engineering</p>
+      <p class="Hero_main_speacialities">Python · Cybersecurity · Network Infrastructure</p>
       <p class="Hero_bio">Building real projects from scratch. Just Python, logic,
           and a passion for making things that actually work.</p>
       <div class="Hero_buttons">
@@ -48,12 +52,12 @@
 
     <div class="stats_main_box">
       <div class="stats_personal_box">
-        <div class="stat_show">5+</div>
+        <div class="stat_show">7+</div>
         <div class="stat_description">PROJECTS BUILT</div>
       </div>
       <div class="stats_personal_box">
-        <div class="stat_show">TOP 15%</div>
-        <div class="stat_description">HACKATHON RANK</div>
+        <div class="stat_show">2nd Place</div>
+        <div class="stat_description">GAME JAM · ALGORITHMICS</div>
       
       </div>
       <div class="stats_personal_box">
@@ -64,7 +68,7 @@
     </div>
 
 
-    <div class="Projects">
+    <div class="Projects" id="projects">
       <div class="section_title">
         <span class="sec_num">01</span> 
         <span class="sec_text">PROJECTS</span>
@@ -77,7 +81,8 @@
           <p class="Description_texts">2D maze game. Dragons, cannons,
             laser gates and full animation
               system built from scratch.</p>
-              <a href="https://github.com/ibrahimmejjadi/Mase_game" target="_blank"><button class="Projects_code_button">VIEW CODE</button></a>      
+              <a href="https://github.com/ibrahimmejjadi/Mase_game" target="_blank"><button class="Projects_code_button">VIEW CODE</button></a>   
+               
         </div>
 
         <div class="Projects_boxes">
@@ -85,7 +90,10 @@
           <h4 class="Project_title">FOOD COLLECTOR</h4>
           <p class="Description_texts">Built in 2 hours at Algorithmics hackathon.
             No AI used. Enemy chase system, score, levels.</p>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
             <a href="https://github.com/ibrahimmejjadi/Pygame_Chaser_Game" target="_blank"><button class="Projects_code_button">VIEW CODE</button></a>
+            <a href="https://youtu.be/0GLTzGYctTw" target="_blank"><button class="Projects_code_button">WATCH DEMO</button></a>  
+          </div>
         </div>
 
         <div class="Projects_boxes">
@@ -93,7 +101,10 @@
           <h4 class="Project_title">FILE ORGANIZER</h4>
           <p class="Description_texts">Auto-sorts files into folders by extension.
             Built with Python OS module in VS Code.</p>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
             <a href="https://github.com/ibrahimmejjadi/File_Organizer" target="_blank"><button class="Projects_code_button">VIEW CODE</button></a>
+            <a href="https://youtu.be/pLWtr3T1M9A" target="_blank"><button class="Projects_code_button">WATCH DEMO</button></a>
+          </div>
         </div>
 
         <div class="Projects_boxes">
@@ -104,11 +115,30 @@
             <a href="https://github.com/ibrahimmejjadi/Julia_ChatBot" target="_blank"><button class="Projects_code_button">VIEW CODE</button></a>
         </div>
 
+        <div class="Projects_boxes">
+          <p class="Project_tools">Flask · SQLite · Role-Based Auth</p>
+          <h4 class="Project_title">QUIZ WEB APP</h4>
+          <p class="Description_texts">Role-based quiz platform. Students attempt
+            once, teachers manage questions, admins control everything. Built with Flask, SQLite, and Jinja2.</p>
+            <a href="https://github.com/ibrahimmejjadi/Quiz_Web_App" target="_blank"><button class="Projects_code_button">VIEW CODE</button></a>
+        </div>
+
+        <div class="Projects_boxes">
+          <p class="Project_tools">Proxmox · Python · TCP · Alpine Linux · Part 1</p>
+          <h4 class="Project_title">TCP ACCESS CONTROL</h4>
+          <p class="Description_texts">TCP server on Proxmox controls network
+            access across 13 Alpine Linux VMs. Python socket checks a user database and returns YES or NO. Auto-starts on boot via OpenRC.</p>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <a href="https://github.com/ibrahimmejjadi/proxmox-tcp-access-control" target="_blank"><button class="Projects_code_button">VIEW CODE</button></a>
+            <a href="https://youtu.be/dC9JOtZYFDo" target="_blank"><button class="Projects_code_button">WATCH DEMO</button></a>        
+          </div>
+          </div>
+
       </div>  
     </div>
 
 
-    <div class="Skills">
+    <div class="Skills" id="skills">
       <div class="section_title">
         <span class="sec_num">02</span>
         <span class="sec_text">SKILLS</span>
@@ -116,20 +146,80 @@
       </div>
       <div class="skills_boxes">
         <div class="skills_text">PYTHON</div>
-        <div class="skills_text">PYGAME</div>
+        <div class="skills_text">FLASK</div>
         <div class="skills_text">SQLITE</div>
-        <div class="skills_text">GITHUB</div>
-        <div class="skills_text">NETWORKING</div>
         <div class="skills_text">HTML/CSS</div>
-        <div class="skills_text">ENGLISH</div>
+        <div class="skills_text">JAVASCRIPT</div>
+        <div class="skills_text">PROXMOX</div>
+        <div class="skills_text">LINUX</div>
+        <div class="skills_text">TCP/IP</div>
+        <div class="skills_text">VIRTUALIZATION</div>
+        <div class="skills_text">CISCO PACKET TRACER</div>
+        <div class="skills_text">GITHUB</div>
+        <div class="skills_text">PYGAME</div>
+        <div class="skills_text">VLANS</div>
+        <div class="skills_text">SHELL SCRIPTING</div>
+        <div class="skills_text">VMware ESXi</div>
       </div>
-
     </div>
 
-
-    <div class="Contact">
+    <div class="Certificates" id="certificates">
       <div class="section_title">
         <span class="sec_num">03</span>
+        <span class="sec_text">CERTIFICATES</span>
+        <span class="sec_line"></span>
+      </div>
+      <div class="certs_box">
+    
+        <div class="cert_entry">
+          <div class="cert_issuer">British Council</div>
+          <div class="cert_name">IELTS ACADEMIC</div>
+          <div class="cert_date">Apr 2025 · Expires Apr 2027</div>
+          <div class="cert_detail">Overall Band 6.5 (B2) · Listening 7.0 · Reading 6.0 · Writing 6.5 · Speaking 6.0</div>
+        </div>
+    
+        <div class="cert_entry">
+          <div class="cert_issuer">Algorithmics Global</div>
+          <div class="cert_name">GAME CODE ARENA HACKATHON</div>
+          <div class="cert_date">Jun 2026</div>
+          <div class="cert_detail">2nd place out of all teams in the game development phase · 72.0 pts</div>
+        </div>
+    
+        <div class="cert_entry">
+          <div class="cert_issuer">Algorithmics Global</div>
+          <div class="cert_name">PYTHON PRO | 2ND YEAR</div>
+          <div class="cert_date">Jun 2026</div>
+          <div class="cert_detail">32 classes · 48 academic hours · Flask, SQLite, Jinja2, OOP</div>
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="Experience" id="experience">
+      <div class="section_title">
+        <span class="sec_num">04</span>
+        <span class="sec_text">EXPERIENCE</span>
+        <span class="sec_line"></span>
+      </div>
+      <div class="exp_entry">
+        <div class="exp_company">Hercules Group MA</div>
+        <div class="exp_role">IT & Automation Support</div>
+        <div class="exp_date">Aug 2026-Present</div>
+        <div class="exp_description">Internal IT point of contact, building and automating systems to streamline hospitality operations.</div>
+      </div>
+
+      <div class="exp_entry">
+        <div class="exp_company">Mindcraft</div>
+        <div class="exp_role">Robotics Monitor</div>
+        <div class="exp_date">Jan-Apr 2026  · 4 MONTHS</div>
+        <div class="exp_description">Guided young students step by step through building and programming LEGO robots, simplifying logic and sequencing concepts into hands-on lessons.</div>
+      </div>
+    </div>
+
+    
+    <div class="Contact" id="contact">
+      <div class="section_title">
+        <span class="sec_num">05</span>
         <span class="sec_text">CONTACT</span>
         <span class="sec_line"></span>
       </div>
