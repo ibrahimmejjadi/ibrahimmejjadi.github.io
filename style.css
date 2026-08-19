@@ -500,3 +500,15 @@
     text-transform: uppercase;
   }
 
+  .nav_class,
+  .Hero,
+  .Projects,
+  .Skills,
+  .Certificates,
+  .Experience,
+  .Contact,
+  .footer {
+    position: relative;
+    z-index: 0;
+    background-color: rgba(8, 8, 16, 0.85);
+  }
