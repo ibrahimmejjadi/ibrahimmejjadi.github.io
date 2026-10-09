@@ -1,4 +1,4 @@
-# 🖥️ Ibrahim MEJJADI — Portfolio
+# 🖥️ Ibrahim MEJJADI: Portfolio
 
 A dark, terminal-themed personal portfolio built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools, just raw code and a gold-on-black aesthetic that matches the "student turning into engineer" story.
 
@@ -6,13 +6,13 @@ A dark, terminal-themed personal portfolio built with vanilla HTML, CSS, and Jav
 
 ## 👀 How to Open It
 
-**Option 1 — Just visit it (fastest):**
+**Option 1: Just visit it (fastest):**
 ```
 https://ibrahimmejjadi.github.io/
 ```
 No download, no setup — it's live.
 
-**Option 2 — Run it locally:**
+**Option 2: Run it locally:**
 ```bash
 git clone https://github.com/ibrahimmejjadi/ibrahimmejjadi.github.io.git
 cd ibrahimmejjadi.github.io
@@ -48,15 +48,15 @@ Navigation is sticky at the top and smooth-scrolls to each section — click `PR
 
 ## 🛠️ Built With
 
-- HTML5 — semantic structure
-- CSS3 — Grid layout for project/skill cards, custom `@keyframes` animations, no framework
-- Vanilla JavaScript — nav-to-section smooth scrolling via `scrollIntoView()`
-- Font Awesome — icon set for GitHub / LinkedIn / Email contact links
+- HTML5: semantic structure
+- CSS3: Grid layout for project/skill cards, custom `@keyframes` animations, no framework
+- Vanilla JavaScript: nav-to-section smooth scrolling via `scrollIntoView()`
+- Font Awesome: icon set for GitHub / LinkedIn / Email contact links
 
 ---
 
 ## 👤 Author
 
-**Ibrahim Mejjadi** — Digital Infrastructure Student, CMC Tangier
+**Ibrahim Mejjadi**: Digital Infrastructure Student, CMC Tangier
 🔗 LinkedIn: [linkedin.com/in/ibrahimmejjadi](https://linkedin.com/in/ibrahimmejjadi)
 📧 Email: ibrahim.mejjadi@gmail.com
